@@ -29,10 +29,9 @@
 	}
 </script>
 
-<div class="container flex justify-center items-center h-screen w-screen" style="width: 100vw">
 	<div class="grid grid-cols-3 gap-4">
 		<div class="col-span-3">
-			<h1>SvelteKit 1.0 Store</h1>
+			<h1 class="text-xl">KāriCards</h1>
 		</div>
 		{#each products as product}
 			<ProductCard {product} />
@@ -45,4 +44,3 @@
 			>
 		</div>
 	</div>
-</div>

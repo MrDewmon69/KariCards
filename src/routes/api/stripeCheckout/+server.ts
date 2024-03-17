@@ -1,12 +1,12 @@
 import { request } from "http";
 import type { RequestHandler } from "./$types";
-import dotenv from 'dotenv';
 import Stripe from 'stripe';
+import { STRIPE_KEY } from '$env/static/private';
 
 dotenv.config();
 
-const KEY : any = process.env.STRIPE_KEY;
-const stripe = new Stripe(KEY, {
+
+const stripe = new Stripe(STRIPE_KEY, {
     apiVersion:"2023-10-16"
 });
 

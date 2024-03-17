@@ -3,9 +3,6 @@ import type { RequestHandler } from "./$types";
 import Stripe from 'stripe';
 import { STRIPE_KEY } from '$env/static/private';
 
-dotenv.config();
-
-
 const stripe = new Stripe(STRIPE_KEY, {
     apiVersion:"2023-10-16"
 });

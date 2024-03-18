@@ -41,6 +41,7 @@
   },
   "type": "module",
   "dependencies": {
+    "sass": "^1.72.0",
     "stripe": "^14.21.0"
   }
 }

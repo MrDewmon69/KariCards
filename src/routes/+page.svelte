@@ -1,7 +1,8 @@
 <script lang="ts">
 	import ProductCard from '$lib/productCard.svelte';
 	import { get } from 'svelte/store';
-	import { cartItems } from '../cart';
+	import { cartItems } from '../cartManager';
+	import Header from '$lib/header.svelte';
 
 	const products: Product[] = [
 		{
@@ -11,7 +12,7 @@
 		}
 	];
 
-	async function checkout() {
+	export async function checkout() {
 		await fetch('api/stripeCheckout', {
 			method: 'POST',
 			headers: {
@@ -27,20 +28,17 @@
 				window.location.replace(data.url);
 			});
 	}
+
+	let businessName: string = 'KāriCards';
 </script>
 
-	<div class="grid grid-cols-3 gap-4">
-		<div class="col-span-3">
-			<h1 class="text-xl">KāriCards</h1>
-		</div>
+<body>
+	<nav>
+		<Header />
+	</nav>
+	<main>
 		{#each products as product}
 			<ProductCard {product} />
 		{/each}
-		<div class="col-span-3">
-			<button
-				class="btn variant-filled-primary
-			"
-				on:click={() => checkout()}>Checout with stripe API</button
-			>
-		</div>
-	</div>
+	</main>
+</body>

@@ -19,8 +19,8 @@ export const POST: RequestHandler = async ({request}) => {
     const session = await stripe.checkout.sessions.create({
         line_items: lineItems,
         mode: 'payment',
-        success_url: 'https://karicards.pages.dev/success',
-        cancel_url: 'https://karicards.pages.dev/cancel',
+        success_url: 'https://www.karicards.store/success',
+        cancel_url: 'https://www.karicards.store/cancel',
     })
 
     return new Response(

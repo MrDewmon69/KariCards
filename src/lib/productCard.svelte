@@ -20,24 +20,27 @@
 </script>
 
 <div class="card">
-	<div class="card-header"><h2>{product.name}</h2></div>
-	<div class="card-body">Price: ${product.price}</div>
-	{#if cartProduct !== undefined}
-		<div class="card-body">
-			Quantity: <strong>{cartProduct.quantity}</strong>
-		</div>
-	{/if}
-
+	<a href="/product">
+		<div class="card-header"><h2>{product.name}</h2></div>
+		<div class="card-body">Price: ${product.price}</div>
+		{#if cartProduct !== undefined}
+			<div class="card-body">
+				Quantity: <strong>{cartProduct.quantity}</strong>
+			</div>
+		{/if}
+	</a>
 	<footer>
 		<button
 			on:click={() => {
 				addToCart(product.id);
-			}}>Add to cart</button
+			}}
+			id="add-to-cart">Add to cart</button
 		>
 		<button
 			on:click={() => {
 				removeFromCart(product.id);
-			}}>Remove from cart</button
+			}}
+			id="remove-from-cart">Remove from cart</button
 		>
 	</footer>
 </div>

@@ -12,9 +12,13 @@
 		<Header />
 	</nav>
 
-	<main>
+	<main class="cart-content">
 		{#each cartContents as cart}
 			<CartCard {cart} />
 		{/each}
 	</main>
 </body>
+
+<style>
+	@import './style.scss';
+</style>

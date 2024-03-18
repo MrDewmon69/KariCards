@@ -34,5 +34,5 @@
 </div>
 
 <footer>
-	<button on:click={() => checkout()}></button>
+	<button class="checkout-button" on:click={() => checkout()}>Checkout</button>
 </footer>

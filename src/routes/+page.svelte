@@ -12,7 +12,7 @@
 		}
 	];
 
-	export async function checkout() {
+	async function checkout() {
 		await fetch('api/stripeCheckout', {
 			method: 'POST',
 			headers: {

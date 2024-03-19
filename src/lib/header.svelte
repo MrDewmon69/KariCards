@@ -12,7 +12,7 @@
 				<li><a href="/contact">Contact</a></li>
 			</ul>
 		</nav>
-		<a class="cta" href="/cart"><button>Cart</button></a>
+		<a class="cta" href="/cart"><button>Checkout</button></a>
 	</header>
 </body>
 

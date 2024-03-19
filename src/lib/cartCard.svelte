@@ -9,7 +9,7 @@
 	}
 </script>
 
-<div>
+<div class="cart-body">
 	<h2 class="cart-content">{getProductById(cart.id)?.name}</h2>
 	<h2 class="cart-content">Quantity: {cart.quantity}</h2>
 	<p id="cart-total">

@@ -1,13 +1,13 @@
-$light-blue-colour: #0088a9;
-$text-colour: #ecf0f1;
+$business-red: #FF0000;
+$text-colour: #000;
 
 .cart-content, #cart-total {
-    color: $text-colour;
+    color: #000;
     margin-left: 10px;
 }
 
 .checkout-button {
-    background-color: $light-blue-colour;
+    background-color: $business-red;
     border-radius: 50px;
     padding: 5px 10px;
     margin-top: 10px;

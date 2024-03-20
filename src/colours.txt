@@ -1,0 +1,4 @@
+Black: #00000
+Red: #CF0A0A
+Orange: #DC5F00
+White: EEEEEE

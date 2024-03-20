@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+
 $business-red-colour: #FF0000;
 $text-colour: #000;
 
@@ -11,13 +13,14 @@ $text-colour: #000;
 .card-body {
     color: #000;
     border: 0;
-    // margin-left: 20px;
+    font-family: "League Spartan", sans-serif;
 }
 
 .card-header {
     text-align: center;
     color: #000;
-    border: 0;  
+    border: 0;
+    font-family: "League Spartan", sans-serif;  
 }
 
 #add-to-cart {
@@ -44,3 +47,7 @@ $text-colour: #000;
 #add-to-cart:hover, #remove-from-cart:hover {
     background-color: rgba($color: #FF0000, $alpha: 0.8);
 }  
+
+button {
+    font-family: "League Spartan", sans-serif;
+}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&di');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
 
 * {
     box-sizing: border-box;
@@ -10,10 +10,11 @@
 .logo-text {
     color: #000;
     cursor: pointer;
+    font-family: "League Spartan", sans-serif;
 }
 
 li, a, button {
-    font-family: "Montserrat", sans-serif;
+    font-family: "League Spartan", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #000;

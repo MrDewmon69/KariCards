@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { get } from 'svelte/store';
 	import { cartItems, addToCart, removeFromCart } from '../cartManager';
+	import card_game_img from '$lib/assets/imgs/card_game.jpg';
 	export let product: Product = { id: '', name: '', price: 0 };
 
 	let cart = get(cartItems);
@@ -21,6 +22,7 @@
 
 <div class="card">
 	<a href="/product">
+		<img class="card-img" src={card_game_img} alt="Card Game" />
 		<div class="card-header"><h2>{product.name}</h2></div>
 		<div class="card-body">Price: ${product.price}</div>
 		{#if cartProduct !== undefined}

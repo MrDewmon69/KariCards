@@ -1,10 +1,11 @@
 <script lang="ts">
-	let businessName: string = 'KāriCards';
+	// let businessName: string = 'KāriCards';
+	import businessIcon from '$lib/assets/imgs/main_logo.png';
 </script>
 
 <body>
 	<header>
-		<p class="logo-text">{businessName}</p>
+		<img src={businessIcon} alt="The KāriCards business logo" id="business-icon" />
 		<nav>
 			<ul class="nav-links">
 				<li><a href="/">Home</a></li>

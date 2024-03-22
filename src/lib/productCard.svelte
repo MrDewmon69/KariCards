@@ -25,6 +25,7 @@
 		<img class="card-img" src={card_game_img} alt="Card Game" />
 		<div class="card-header"><h2>{product.name}</h2></div>
 		<div class="card-body">Price: ${product.price}</div>
+		<div class="product-desc">It's the card game</div>
 		{#if cartProduct !== undefined}
 			<div class="card-body">
 				Quantity: <strong>{cartProduct.quantity}</strong>

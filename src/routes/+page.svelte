@@ -41,4 +41,6 @@
 			<ProductCard {product} />
 		{/each}
 	</main>
+
+	<p>buy our product!!!</p>
 </body>

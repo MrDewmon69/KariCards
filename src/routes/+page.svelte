@@ -42,5 +42,5 @@
 		{/each}
 	</main>
 
-	<p>buy our product!!!</p>
+	<p>buy our product please!!!</p>
 </body>

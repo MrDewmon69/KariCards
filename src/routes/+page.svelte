@@ -1,8 +1,8 @@
 <script lang="ts">
 	import ProductCard from '$lib/productCard.svelte';
-	import { get } from 'svelte/store';
-	import { cartItems } from '../cartManager';
+	import BannerLand from '$lib/assets/imgs/landscape.jpg';
 	import Header from '$lib/header.svelte';
+	import { onMount } from 'svelte';
 
 	const products: Product[] = [
 		{
@@ -12,24 +12,11 @@
 		}
 	];
 
-	async function checkout() {
-		await fetch('api/stripeCheckout', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify({ items: get(cartItems) })
-		})
-			.then((data) => {
-				return data.json();
-			})
-			.then((data) => {
-				data.url;
-				window.location.replace(data.url);
-			});
-	}
-
 	let businessName: string = 'KāriCards';
+
+	function buttonClick() {
+		window.location.href = './product';
+	}
 </script>
 
 <body>
@@ -37,10 +24,18 @@
 		<Header />
 	</nav>
 	<main>
-		{#each products as product}
-			<ProductCard {product} />
-		{/each}
+		<div class="banner">
+			<img src={BannerLand} alt="A nice landscape" id="banner-img" />
+			<button id="product-button" on:click={buttonClick}>Buy now</button>
+		</div>
+		<div class="product">
+			{#each products as product}
+				<ProductCard {product} />
+			{/each}
+		</div>
 	</main>
-
-	<p>buy our product please!!!</p>
 </body>
+
+<style>
+	@import './style.scss';
+</style>

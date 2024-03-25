@@ -1,0 +1,29 @@
+$business-red: #FF0000;
+
+.product {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+}
+
+#banner-img {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#product-button {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: $business-red;
+    padding: 10px 10px;
+    border-radius: 50px;
+}
+
+.banner {
+    position: relative;
+    display: inline-block;
+}

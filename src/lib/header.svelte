@@ -15,6 +15,7 @@
 		</nav>
 		<a class="cta" href="/cart"><button>Checkout</button></a>
 	</header>
+	<hr id="line" />
 </body>
 
 <style>

@@ -5,9 +5,13 @@ $text-colour: #000;
 
 
 .card {
+    display: flex;
     border: 0;
     margin-left: 120px;
     width: fit-content;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
 
 .card-body {
@@ -29,7 +33,6 @@ $text-colour: #000;
 }
 
 #add-to-cart {
-    display: inline-block;
     margin: 0 auto;
     background-color: rgba($color: #FF0000, $alpha: 1.0);
     color: $text-colour;
@@ -39,7 +42,6 @@ $text-colour: #000;
 }
 
 #remove-from-cart {
-    display: inline-block;
     margin: 0 auto;
     background-color: rgba($color: #FF0000, $alpha: 1.0);
     color: $text-colour;
@@ -55,4 +57,5 @@ $text-colour: #000;
 
 button {
     font-family: "League Spartan", sans-serif;
+    display: inline-block;
 }

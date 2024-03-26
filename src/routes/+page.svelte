@@ -2,7 +2,6 @@
 	import ProductCard from '$lib/productCard.svelte';
 	import BannerLand from '$lib/assets/imgs/landscape.jpg';
 	import Header from '$lib/header.svelte';
-	import { onMount } from 'svelte';
 
 	const products: Product[] = [
 		{
@@ -25,6 +24,7 @@
 	</nav>
 	<main>
 		<div class="banner">
+			<p id="banner-text">{businessName}</p>
 			<img src={BannerLand} alt="A nice landscape" id="banner-img" />
 			<button id="product-button" on:click={buttonClick}>Buy now</button>
 		</div>

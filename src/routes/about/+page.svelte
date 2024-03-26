@@ -16,7 +16,8 @@
 	</div>
 	<div class="content">
 		<p>
-			Hello we are {businessName} and we are a Young Enterprise Scheme Company.
+			Hello we are {businessName} and we are a Young Enterprise Scheme Company. Our goal is to encourage
+			the use of common te reo words in everyone's day to day life
 		</p>
 	</div>
 	<!-- Explain who we are as a group and what sell... -->

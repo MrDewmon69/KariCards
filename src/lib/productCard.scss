@@ -5,13 +5,9 @@ $text-colour: #000;
 
 
 .card {
-    display: flex;
     border: 0;
     margin-left: 120px;
     width: fit-content;
-    justify-content: center;
-    align-items: center;
-    height: auto;
 }
 
 .card-body {
@@ -57,5 +53,4 @@ $text-colour: #000;
 
 button {
     font-family: "League Spartan", sans-serif;
-    display: inline-block;
 }
